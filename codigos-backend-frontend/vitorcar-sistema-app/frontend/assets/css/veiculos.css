@@ -1,0 +1,322 @@
+.vc-main {
+  max-width: 1440px;
+}
+
+.vc-hero {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.vc-hero h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.vc-hero-subtitle {
+  font-size: 0.95rem;
+  padding: 0.6rem 0.6rem; 
+  border-radius: 999px;
+  border-top: none;
+  border-bottom: none;
+  background-color: rgba(81, 73, 95, 0.65);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
+}
+
+.vc-hero::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  width: 520px;
+  max-width: 100%;
+  height: 120px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(255, 140, 0, 0.28), transparent 70%),
+    radial-gradient(circle at 90% 100%, rgba(0, 102, 255, 0.22), transparent 70%),
+    rgba(10, 10, 10, 0.96);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.vc-card-table {
+  background-color: #d9d9dd;
+  border-radius: 26px;
+  border: none;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.85);
+  color: #111111;
+  overflow: hidden;
+}
+
+.vc-card-table .card-header {
+  background-color: #53528e;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 0.9rem 1.5rem;
+}
+
+.vc-card-table .card-header h2,
+.vc-card-table .card-header h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+#form-veiculo .form-label {
+  font-weight: 500;
+  color: #222222;
+}
+
+#form-veiculo .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccccd4;
+  font-size: 0.9rem;
+}
+
+#form-veiculo .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(79, 125, 255, 0.35);
+  border-color: #4f7dff;
+}
+
+#form-veiculo .btn-primary {
+  background-color: #1565ff;
+  border-color: #1565ff;
+  font-weight: 600;
+  padding-inline: 1.4rem;
+}
+
+#form-veiculo .btn-warning {
+  font-weight: 600;
+  padding-inline: 1.4rem;
+}
+
+#form-veiculo .btn-outline-light {
+  border-color: #444444;
+  color: #222222;
+  padding-inline: 1.4rem;
+}
+
+#form-veiculo .btn-outline-light:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.vc-search-bar {
+  padding: 0.6rem 1.2rem;
+  border-radius: 16px;
+  background-color: rgba(8, 8, 12, 0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+}
+
+.vc-search-input {
+  min-width: 240px;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid #555a66;
+  background-color: #0f1014;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.vc-search-input::placeholder {
+  color: #888ea0;
+}
+
+.vc-search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.16rem rgba(90, 150, 255, 0.45);
+  border-color: #5a96ff;
+}
+
+#btn-buscar {
+  font-weight: 500;
+  border-color: #5a96ff;
+  color: #ffffff;
+}
+
+#btn-buscar:hover {
+  background-color: #5a96ff;
+  color: #000000;
+}
+
+#btn-limpar-busca {
+  font-weight: 500;
+  border-color: #888888;
+  color: #dddddd;
+}
+
+#btn-limpar-busca:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.vc-datatables header {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 1.2rem !important;
+}
+
+.vc-datatables header h2 {
+  display: inline-block;
+  padding: 0.7rem 2.6rem;
+  background-color: #505050;
+  border-radius: 22px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.85);
+}
+
+.vc-datatables .card.vc-card-table {
+  background-color: #050814;
+  color: #f8f9fa;
+}
+
+.vc-datatables .table {
+  margin-bottom: 0;
+  font-size: 0.88rem;
+}
+
+.vc-datatables .table thead {
+  background-color: #111827;
+}
+
+.vc-datatables .table thead th {
+  border-color: #262b3a;
+  font-weight: 600;
+}
+
+.vc-datatables .table tbody td {
+  border-color: #151b2d;
+  vertical-align: middle;
+}
+
+.vc-datatables .table tbody tr:nth-child(even) {
+  background-color: #0b0f1a;
+}
+
+.vc-datatables .table tbody tr:nth-child(odd) {
+  background-color: #050814;
+}
+
+.vc-datatables .table tbody tr td.text-center.text-muted {
+  padding: 1rem;
+  font-style: italic;
+  color: #8088a0 !important;
+}
+
+.vc-datatables .btn-outline-warning {
+  border-color: #ffb300;
+  color: #ffb300;
+}
+
+.vc-datatables .btn-outline-warning:hover {
+  background-color: #ffb300;
+  color: #000000;
+}
+
+.vc-datatables .btn-outline-danger {
+  border-color: #ff5252;
+  color: #ff5252;
+}
+
+.vc-datatables .btn-outline-danger:hover {
+  background-color: #ff5252;
+  color: #ffffff;
+}
+
+section.text-center .btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+  border-radius: 999px;
+}
+
+section.text-center .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+[aria-label="Exclusão de veículo"] .vc-card-table {
+  background-color: #050814;
+  color: #f8f9fa;
+}
+
+[aria-label="Exclusão de veículo"] .vc-card-table .card-header {
+  background: transparent;
+  border-bottom: none;
+  padding: 0.4rem 1.5rem 0.2rem;
+}
+
+[aria-label="Exclusão de veículo"] .vc-card-table .card-header h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.8rem;
+  margin: 0;
+  background: linear-gradient(90deg, #b3261e, #ff4d4d);
+  border-radius: 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.9);
+}
+
+[aria-label="Exclusão de veículo"] .vc-card-table .card-body {
+  padding: 0.75rem 1.5rem 1.1rem;
+}
+
+#form-excluir-veiculo .form-label {
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+#form-excluir-veiculo .form-control {
+  border-radius: 10px;
+  border: 1px solid #3b3f52;
+  background-color: #0b0f1a;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+#form-excluir-veiculo .form-control::placeholder {
+  color: #9ca3af;
+}
+
+#form-excluir-veiculo .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.16rem rgba(220, 38, 38, 0.35);
+  border-color: #f87171;
+}
+
+#form-excluir-veiculo .btn-danger {
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.9);
+}
+
+#form-excluir-veiculo + p {
+  margin-top: 0.35rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .vc-hero::before {
+    width: 100%;
+    height: 120px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .vc-search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .vc-search-input {
+    max-width: 100%;
+  }
+}

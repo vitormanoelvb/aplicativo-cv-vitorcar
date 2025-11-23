@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitorCar | Créditos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/creditos.css">
+  <link rel="stylesheet" href="./assets/css/transitions.css">
+  <link rel="icon" type="image/png" href="./assets/img/favicon-vitorcar.ico">
+</head>
+<body class="vc-body" id="topo">
+
+  <header class="vc-header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./assets/img/logo-miniatura-vc.png" alt="Logo VitorCar" class="vc-logo me-2">
+      <span class="fw-bold">VitorCar</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vcNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="vcNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <main class="vc-main vc-credits-main container py-4">
+
+    <section class="vc-credits-hero text-center mb-4" aria-label="Créditos do sistema VitorCar">
+      <h1 class="h3 mb-2">Créditos do Projeto</h1>
+      <p class="vc-hero-subtitle vc-credits-subtitle mb-0">
+        VitorCar – Sistema de Controle de Veículos e Manutenções • Aplicativo de controle de veículos com foco em organização,
+        transparência e tecnologia acessível.
+      </p>
+    </section>
+
+    <section class="vc-credits-grid row g-4 align-items-stretch" aria-label="Informações do projeto e entidades do sistema">
+
+      <div class="col-12 col-lg-6">
+        <article class="card vc-credits-card h-100">
+          <div class="card-header">
+            <h2 class="h6 mb-0">
+              <i class="bi bi-person-badge-fill me-2"></i>
+              Informações do Projeto
+            </h2>
+          </div>
+          <div class="card-body">
+            <dl class="vc-credits-list">
+              <div class="mb-2">
+                <dt>Aplicativo</dt>
+                <dd>VitorCar – Sistema de Controle de Veículos e Manutenções</dd>
+              </div>
+
+              <div class="mb-2">
+                <dt>Autor</dt>
+                <dd>Vitor Manoel Vidal Braz</dd>
+              </div>
+
+              <div class="mb-2">
+                <dt>Disciplina / Projeto</dt>
+                <dd>Avaliação prática de Frontend – Aplicativo de controle de veículos</dd>
+              </div>
+
+              <div class="mb-2">
+                <dt>Objetivo</dt>
+                <dd>
+                  Prover um aplicativo web para cadastro, consulta e acompanhamento de veículos e suas manutenções,
+                  integrando backend com API REST, banco de dados relacional e interface responsiva.
+                </dd>
+              </div>
+
+              <div class="mb-2">
+                <dt>Arquitetura</dt>
+                <dd>
+                  Backend com API REST organizada, banco de dados relacional para histórico de veículos e manutenções,
+                  e frontend moderno em HTML, CSS, JavaScript e Bootstrap.
+                </dd>
+              </div>
+
+              <div>
+                <dt>Agradecimento especial</dt>
+                <dd>
+                  VM Systems – parceria fictícia responsável pelo desenho da arquitetura, integrações e boas práticas
+                  adotadas no projeto VitorCar.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <section class="card vc-credits-card h-100" aria-label="Modelo de dados do VitorCar">
+          <div class="card-header">
+            <h2 class="h6 mb-0">
+              <i class="bi bi-diagram-3-fill me-2"></i>
+              Entidades do Sistema
+            </h2>
+          </div>
+          <div class="card-body">
+            <p class="vc-credits-intro">
+              O modelo de dados do VitorCar foi pensado para ser simples e direto, mas suficiente para atender o controle
+              de veículos e manutenções proposto na avaliação.
+            </p>
+
+            <ul class="vc-credits-entities list-unstyled mb-3">
+              <li class="mb-3">
+                <h3 class="h6 mb-1">Entidade <strong>Veículo</strong></h3>
+                <p class="mb-1 small">
+                  Representa cada veículo controlado pelo sistema.
+                </p>
+                <p class="mb-0 small">
+                  <span class="vc-credits-pill">id_veiculo</span>,
+                  <span class="vc-credits-pill">modelo</span>,
+                  <span class="vc-credits-pill">marca</span>,
+                  <span class="vc-credits-pill">ano</span>,
+                  <span class="vc-credits-pill">placa</span>,
+                  <span class="vc-credits-pill">dono</span>
+                </p>
+              </li>
+
+              <li class="mb-3">
+                <h3 class="h6 mb-1">Entidade <strong>Manutenção</strong></h3>
+                <p class="mb-1 small">
+                  Guarda cada serviço realizado em um veículo, com custo e data.
+                </p>
+                <p class="mb-0 small">
+                  <span class="vc-credits-pill">id_manutencao</span>,
+                  <span class="vc-credits-pill">descricao</span>,
+                  <span class="vc-credits-pill">data</span>,
+                  <span class="vc-credits-pill">custo</span>,
+                  <span class="vc-credits-pill">id_veiculo</span>
+                </p>
+              </li>
+            </ul>
+
+            <div class="vc-credits-relationship">
+              <h3 class="h6 mb-1">Relacionamento</h3>
+              <p class="small mb-0">
+                <strong>Um veículo pode ter várias manutenções</strong>, mantendo o histórico completo de serviços
+                realizados ao longo do tempo.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+    <section class="vc-credits-stack mt-4" aria-label="Créditos de desenvolvimento e tecnologias utilizadas">
+      <div class="card vc-credits-card">
+        <div class="card-header">
+          <h2 class="h6 mb-0">
+            <i class="bi bi-cpu-fill me-2"></i>
+            Créditos de desenvolvimento e tecnologias
+          </h2>
+        </div>
+        <div class="card-body">
+          <ul class="vc-credits-stack-list">
+            <li><strong>Frontend:</strong> HTML5 e CSS3 para estruturação e estilização das telas.</li>
+            <li><strong>Linguagem de programação:</strong> JavaScript, responsável pela lógica do cliente e integração com a API.</li>
+            <li><strong>Framework de CSS:</strong> Bootstrap 5, escolhido para o sistema de grid responsivo e componentes visuais.</li>
+            <li><strong>Motor Gráfico:</strong> VM Engine Development 5.0 motor fictício utilizado como base conceitual para a identidade visual.</li>
+            <li><strong>Empresa de desenvolvimento:</strong> VM Systems, estúdio fictício responsável pela concepção do backend, frontend e banco de dados do VitorCar.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="vc-credits-people mt-4" aria-label="Professor, autor e marcas do projeto">
+      <div class="row g-4 justify-content-center text-center">
+
+        <div class="col-6 col-md-3">
+          <figure class="vc-credits-figure">
+            <img
+              src="./assets/img/foto-prof-patrick.png"
+              alt="Professor Patrick Vinicius Estevão Oliveira"
+              class="img-fluid rounded-circle vc-credits-photo"
+            >
+            <figcaption class="mt-2 small">
+              Professor orientador:<br><strong>Patrick Vinicius Estevão Oliveira</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <figure class="vc-credits-figure">
+            <img
+              src="./assets/img/foto-vitor.png"
+              alt="Vitor Manoel Vidal Braz"
+              class="img-fluid rounded-circle vc-credits-photo"
+            >
+            <figcaption class="mt-2 small">
+              Desenvolvedor do projeto:<br><strong>Vitor Manoel Vidal Braz</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <figure class="vc-credits-figure">
+            <img
+              src="./assets/img/logo-vmenginedev.png"
+              alt="Logo VM Engine Development 5.0"
+              class="img-fluid rounded-3 vc-credits-logo"
+            >
+            <figcaption class="mt-2 small">
+              Motor gráfico conceitual:<br><strong>VM Engine Development 5.0</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <figure class="vc-credits-figure">
+            <img
+              src="./assets/img/logo-vmsystems.png"
+              alt="Logo VM Systems"
+              class="img-fluid rounded-3 vc-credits-logo"
+            >
+            <figcaption class="mt-2 small">
+              Estúdio fictício de desenvolvimento:<br><strong>VM Systems</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+<section class="vc-credits-social text-center mt-5 mb-5" aria-label="Redes sociais e repositórios">
+  <h2 class="h6 mb-3">
+    <i class="bi bi-link-45deg me-2"></i>
+    Redes e Repositórios do Desenvolvedor
+  </h2>
+
+  <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+    <a href="https://linktr.ee/vitormanoelvb?fbclid=PAY2xjawG3CWxleHRuA2FlbQIxMQABpvQyNVHzy9_0zPlyXMkr3uXSyY_d9xF5WrGRdRlTC5tsVKHO_lki5K6Uiw_aem_LAlMOl4j9oHdurtMJMglcA"
+       target="_blank" class="vc-social-link">
+      <img src="https://api.blog.production.linktr.ee/wp-content/uploads/2022/06/Avatar-Symbol-Canopy.png"
+           alt="Linktree Logo" class="vc-social-icon">
+      Linktree
+    </a>
+
+    <a href="https://github.com/vitormanoelvb"
+       target="_blank" class="vc-social-link">
+      <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png"
+           alt="GitHub Logo" class="vc-social-icon">
+      GitHub – Vitor Manoel Vidal Braz
+    </a>
+
+    <a href="https://github.com/vitormanoelvb/aplicativo-cv-vitorcar"   
+    target="_blank" class="vc-social-link">
+      <img src="https://git-scm.com/images/logos/logomark-black@2x.png"     
+      alt="Git Logo" class="vc-social-icon">
+      Repositório do Projeto VitorCar
+    </a>
+  </div>
+</section>
+
+    </section>
+
+    <section class="vc-credits-return text-center mt-5 mb-4" aria-label="Retorno para a página inicial">
+      <p class="vc-credits-return-text mb-3">
+        Conheça de novo o painel principal do sistema VitorCar.
+      </p>
+      <a href="index.html" class="btn btn-outline-light vc-credits-return-btn">
+        <i class="bi bi-arrow-left-circle me-1"></i>
+        Voltar para página inicial
+      </a>
+    </section>
+
+  </main>
+
+  <div id="vc-transition" class="vc-transition d-none">
+    <video id="vc-transition-video" class="vc-transition-video">
+      <source src="./assets/video/transition-vitorcar.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <footer class="vc-footer text-center py-3">
+    <div class="vc-footer-inner d-flex justify-content-center align-items-center gap-3 flex-wrap">
+      <img src="./assets/img/logo-vmengine.png" alt="Logo VMEngine" class="vc-footer-logo">
+      <img src="./assets/img/logo-vmsystems.png" alt="Logo VM Systems" class="vc-footer-logo">
+
+      <small>
+        © 2025 - VitorCar • Sistema de Controle de Veículos e Manutenções • Aplicativo de Controle de Veiculos • Projeto Acadêmico
+      </small>
+
+      <img src="./assets/img/logo-univale.png" alt="Logo Univale" class="vc-footer-logo">
+      <img src="./assets/img/logo-sistemas-info.png" alt="Logo Sistemas de Informação" class="vc-footer-logo">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/transitions.js"></script>
+</body>
+</html>

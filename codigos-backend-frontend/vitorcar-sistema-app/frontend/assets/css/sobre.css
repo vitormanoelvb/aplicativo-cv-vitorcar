@@ -1,0 +1,203 @@
+.vc-about-main { 
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.vc-about-hero {
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.vc-about-hero h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.vc-about-hero p {
+  font-size: 0.95rem;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #e5e5ff;
+}
+
+.vc-about-hero::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  transform: translateX(-50%);
+  width: 520px;
+  max-width: 100%;
+  height: 120px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(255,140,0,0.26), transparent 70%),
+    radial-gradient(circle at 85% 100%, rgba(79,125,255,0.22), transparent 70%),
+    rgba(10,10,10,0.96);
+  box-shadow: 0 22px 40px rgba(0,0,0,0.9);
+  z-index: -1;
+}
+
+.vc-about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vc-about-text {
+  flex: 1 1 360px;
+}
+
+.vc-about-text h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.vc-about-text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d2d2e8;
+  margin-bottom: 0.75rem;
+}
+
+.vc-about-text strong {
+  color: #ff7b00;
+  font-weight: 600;
+}
+
+.vc-about-media {
+  flex: 1 1 360px;
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.vc-about-circle {
+  position: absolute;
+  inset: -10%;
+  background: linear-gradient(135deg, #ff7b00, #ff4d6d, #4f7dff);
+  clip-path: circle(55% at 85% 35%);
+  opacity: 0.22;
+  z-index: 1;
+}
+
+.vc-about-media-slider {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  height: 280px;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.95);
+  background-color: #050814;
+  z-index: 2;
+}
+
+.vc-about-media-slider img,
+.vc-about-media-slider video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: vc-about-slide 18s infinite;
+}
+
+.vc-about-media-slider .ativo {
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  animation: none;
+}
+
+.vc-about-media-slider img:nth-child(1),
+.vc-about-media-slider video:nth-child(1) {
+  animation-delay: 0s;
+}
+.vc-about-media-slider img:nth-child(2),
+.vc-about-media-slider video:nth-child(2) {
+  animation-delay: 6s;
+}
+.vc-about-media-slider img:nth-child(3),
+.vc-about-media-slider video:nth-child(3) {
+  animation-delay: 12s;
+}
+
+@keyframes vc-about-slide {
+  0%,
+  20% {
+    opacity: 1;
+  }
+  26%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.vc-about-media-caption {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  text-align: right;
+  color: #9fa6ff;
+}
+
+@media (max-width: 992px) {
+  .vc-about-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vc-about-media {
+    align-self: center;
+    width: 100%;
+  }
+
+  .vc-about-media-slider {
+    height: 230px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vc-about-hero::before {
+    width: 100%;
+    height: 110px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .vc-about-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .vc-about-text p {
+    font-size: 0.9rem;
+  }
+}
+
+.vc-main [aria-label="Imagem ilustrativa do VitorCar"] img.img-fluid.rounded-4.shadow-lg {
+  max-height: 520px !important;
+  width: 100%;
+  max-width: 520px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+[aria-label="História e propósito do VitorCar"] .row.g-4.align-items-center {
+  align-items: flex-start !important;
+}
+
+@media (min-width: 992px) {
+  [aria-label="Imagem ilustrativa do VitorCar"] {
+    margin-top: 8rem;
+  }
+}
